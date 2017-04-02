@@ -2,12 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="How many hot dogs do you want to order?"
+        android:textAppearence="?android:attr/textAppearenceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/AmountTextView" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/AmountEditText" />
+    <Button
+        android:id="@+id/OrderButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Order now!" />
 </LinearLayout>

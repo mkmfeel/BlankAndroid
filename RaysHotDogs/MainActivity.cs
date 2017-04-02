@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace RaysHotDogs
 {
-    [Activity(Label = "Ray's Hot Dogs", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "RaysHotDogs", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         int count = 1;
@@ -22,7 +22,7 @@ namespace RaysHotDogs
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.OrderButton);
+            Button button = FindViewById<Button>(Resource.Id.MyButton);
 
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
         }
